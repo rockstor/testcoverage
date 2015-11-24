@@ -5,7 +5,7 @@
     
     
     <meta http-equiv='X-UA-Compatible' content='IE=emulateIE7' />
-    <title>Coverage for src/rockstor/storageadmin/views/disk: 50%</title>
+    <title>Coverage for src/rockstor/storageadmin/views/disk: 54%</title>
     <link rel='stylesheet' href='style.css' type='text/css'>
     
     <script type='text/javascript' src='jquery.min.js'></script>
@@ -21,13 +21,13 @@
 <div id='header'>
     <div class='content'>
         <h1>Coverage for <b>src/rockstor/storageadmin/views/disk</b> :
-            <span class='pc_cov'>50%</span>
+            <span class='pc_cov'>54%</span>
         </h1>
         <img id='keyboard_icon' src='keybd_closed.png'>
         <h2 class='stats'>
             170 statements &nbsp;
-            <span class='run hide_run shortkey_r button_toggle_run'>85 run</span>
-            <span class='mis shortkey_m button_toggle_mis'>85 missing</span>
+            <span class='run hide_run shortkey_r button_toggle_run'>92 run</span>
+            <span class='mis shortkey_m button_toggle_mis'>78 missing</span>
             <span class='exc shortkey_x button_toggle_exc'>0 excluded</span>
             
         </h2>
@@ -104,7 +104,7 @@
 <p id='n41' class='stm run hide_run'><a href='#n41'>41</a></p>
 <p id='n42' class='pln'><a href='#n42'>42</a></p>
 <p id='n43' class='stm run hide_run'><a href='#n43'>43</a></p>
-<p id='n44' class='stm mis'><a href='#n44'>44</a></p>
+<p id='n44' class='stm run hide_run'><a href='#n44'>44</a></p>
 <p id='n45' class='stm mis'><a href='#n45'>45</a></p>
 <p id='n46' class='stm mis'><a href='#n46'>46</a></p>
 <p id='n47' class='stm mis'><a href='#n47'>47</a></p>
@@ -142,9 +142,9 @@
 <p id='n79' class='stm mis'><a href='#n79'>79</a></p>
 <p id='n80' class='stm mis'><a href='#n80'>80</a></p>
 <p id='n81' class='stm mis'><a href='#n81'>81</a></p>
-<p id='n82' class='stm mis'><a href='#n82'>82</a></p>
-<p id='n83' class='stm mis'><a href='#n83'>83</a></p>
-<p id='n84' class='stm mis'><a href='#n84'>84</a></p>
+<p id='n82' class='stm run hide_run'><a href='#n82'>82</a></p>
+<p id='n83' class='stm run hide_run'><a href='#n83'>83</a></p>
+<p id='n84' class='stm run hide_run'><a href='#n84'>84</a></p>
 <p id='n85' class='pln'><a href='#n85'>85</a></p>
 <p id='n86' class='stm mis'><a href='#n86'>86</a></p>
 <p id='n87' class='pln'><a href='#n87'>87</a></p>
@@ -152,9 +152,9 @@
 <p id='n89' class='stm mis'><a href='#n89'>89</a></p>
 <p id='n90' class='stm mis'><a href='#n90'>90</a></p>
 <p id='n91' class='stm mis'><a href='#n91'>91</a></p>
-<p id='n92' class='stm mis'><a href='#n92'>92</a></p>
-<p id='n93' class='stm mis'><a href='#n93'>93</a></p>
-<p id='n94' class='stm mis'><a href='#n94'>94</a></p>
+<p id='n92' class='stm run hide_run'><a href='#n92'>92</a></p>
+<p id='n93' class='stm run hide_run'><a href='#n93'>93</a></p>
+<p id='n94' class='stm run hide_run'><a href='#n94'>94</a></p>
 <p id='n95' class='pln'><a href='#n95'>95</a></p>
 <p id='n96' class='pln'><a href='#n96'>96</a></p>
 <p id='n97' class='stm run hide_run'><a href='#n97'>97</a></p>
@@ -336,7 +336,7 @@
 <p id='t41' class='stm run hide_run'>&nbsp; &nbsp; <span class='op'>@</span><span class='nam'>transaction</span><span class='op'>.</span><span class='nam'>atomic</span><span class='strut'>&nbsp;</span></p>
 <p id='t42' class='pln'>&nbsp; &nbsp; <span class='key'>def</span> <span class='nam'>_update_disk_state</span><span class='op'>(</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
 <p id='t43' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>disks</span> <span class='op'>=</span> <span class='nam'>scan_disks</span><span class='op'>(</span><span class='nam'>settings</span><span class='op'>.</span><span class='nam'>MIN_DISK_SIZE</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
-<p id='t44' class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>for</span> <span class='nam'>d</span> <span class='key'>in</span> <span class='nam'>disks</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p id='t44' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>for</span> <span class='nam'>d</span> <span class='key'>in</span> <span class='nam'>disks</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
 <p id='t45' class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>dob</span> <span class='op'>=</span> <span class='nam'>None</span><span class='strut'>&nbsp;</span></p>
 <p id='t46' class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>if</span> <span class='op'>(</span><span class='nam'>Disk</span><span class='op'>.</span><span class='nam'>objects</span><span class='op'>.</span><span class='nam'>filter</span><span class='op'>(</span><span class='nam'>name</span><span class='op'>=</span><span class='nam'>d</span><span class='op'>.</span><span class='nam'>name</span><span class='op'>)</span><span class='op'>.</span><span class='nam'>exists</span><span class='op'>(</span><span class='op'>)</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
 <p id='t47' class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>dob</span> <span class='op'>=</span> <span class='nam'>Disk</span><span class='op'>.</span><span class='nam'>objects</span><span class='op'>.</span><span class='nam'>get</span><span class='op'>(</span><span class='nam'>name</span><span class='op'>=</span><span class='nam'>d</span><span class='op'>.</span><span class='nam'>name</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
@@ -374,9 +374,9 @@
 <p id='t79' class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>p</span><span class='op'>.</span><span class='nam'>uuid</span> <span class='op'>=</span> <span class='nam'>btrfs_uuid</span><span class='op'>(</span><span class='nam'>dob</span><span class='op'>.</span><span class='nam'>name</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
 <p id='t80' class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>p</span><span class='op'>.</span><span class='nam'>save</span><span class='op'>(</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
 <p id='t81' class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>dob</span><span class='op'>.</span><span class='nam'>save</span><span class='op'>(</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
-<p id='t82' class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>for</span> <span class='nam'>do</span> <span class='key'>in</span> <span class='nam'>Disk</span><span class='op'>.</span><span class='nam'>objects</span><span class='op'>.</span><span class='nam'>all</span><span class='op'>(</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
-<p id='t83' class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>if</span> <span class='op'>(</span><span class='nam'>do</span><span class='op'>.</span><span class='nam'>name</span> <span class='key'>not</span> <span class='key'>in</span> <span class='op'>[</span><span class='nam'>d</span><span class='op'>.</span><span class='nam'>name</span> <span class='key'>for</span> <span class='nam'>d</span> <span class='key'>in</span> <span class='nam'>disks</span><span class='op'>]</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
-<p id='t84' class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>do</span><span class='op'>.</span><span class='nam'>offline</span> <span class='op'>=</span> <span class='nam'>True</span><span class='strut'>&nbsp;</span></p>
+<p id='t82' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>for</span> <span class='nam'>do</span> <span class='key'>in</span> <span class='nam'>Disk</span><span class='op'>.</span><span class='nam'>objects</span><span class='op'>.</span><span class='nam'>all</span><span class='op'>(</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p id='t83' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>if</span> <span class='op'>(</span><span class='nam'>do</span><span class='op'>.</span><span class='nam'>name</span> <span class='key'>not</span> <span class='key'>in</span> <span class='op'>[</span><span class='nam'>d</span><span class='op'>.</span><span class='nam'>name</span> <span class='key'>for</span> <span class='nam'>d</span> <span class='key'>in</span> <span class='nam'>disks</span><span class='op'>]</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p id='t84' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>do</span><span class='op'>.</span><span class='nam'>offline</span> <span class='op'>=</span> <span class='nam'>True</span><span class='strut'>&nbsp;</span></p>
 <p id='t85' class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>else</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
 <p id='t86' class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>try</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
 <p id='t87' class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='com'># for non ata/sata drives</span><span class='strut'>&nbsp;</span></p>
@@ -384,9 +384,9 @@
 <p id='t89' class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>except</span> <span class='nam'>Exception</span><span class='op'>,</span> <span class='nam'>e</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
 <p id='t90' class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>logger</span><span class='op'>.</span><span class='nam'>exception</span><span class='op'>(</span><span class='nam'>e</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
 <p id='t91' class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>do</span><span class='op'>.</span><span class='nam'>smart_available</span> <span class='op'>=</span> <span class='nam'>do</span><span class='op'>.</span><span class='nam'>smart_enabled</span> <span class='op'>=</span> <span class='nam'>False</span><span class='strut'>&nbsp;</span></p>
-<p id='t92' class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>do</span><span class='op'>.</span><span class='nam'>save</span><span class='op'>(</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
-<p id='t93' class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>ds</span> <span class='op'>=</span> <span class='nam'>DiskInfoSerializer</span><span class='op'>(</span><span class='nam'>Disk</span><span class='op'>.</span><span class='nam'>objects</span><span class='op'>.</span><span class='nam'>all</span><span class='op'>(</span><span class='op'>)</span><span class='op'>.</span><span class='nam'>order_by</span><span class='op'>(</span><span class='str'>&#39;name&#39;</span><span class='op'>)</span><span class='op'>,</span> <span class='nam'>many</span><span class='op'>=</span><span class='nam'>True</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
-<p id='t94' class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>return</span> <span class='nam'>Response</span><span class='op'>(</span><span class='nam'>ds</span><span class='op'>.</span><span class='nam'>data</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p id='t92' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>do</span><span class='op'>.</span><span class='nam'>save</span><span class='op'>(</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p id='t93' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>ds</span> <span class='op'>=</span> <span class='nam'>DiskInfoSerializer</span><span class='op'>(</span><span class='nam'>Disk</span><span class='op'>.</span><span class='nam'>objects</span><span class='op'>.</span><span class='nam'>all</span><span class='op'>(</span><span class='op'>)</span><span class='op'>.</span><span class='nam'>order_by</span><span class='op'>(</span><span class='str'>&#39;name&#39;</span><span class='op'>)</span><span class='op'>,</span> <span class='nam'>many</span><span class='op'>=</span><span class='nam'>True</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p id='t94' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>return</span> <span class='nam'>Response</span><span class='op'>(</span><span class='nam'>ds</span><span class='op'>.</span><span class='nam'>data</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
 <p id='t95' class='pln'><span class='strut'>&nbsp;</span></p>
 <p id='t96' class='pln'><span class='strut'>&nbsp;</span></p>
 <p id='t97' class='stm run hide_run'><span class='key'>class</span> <span class='nam'>DiskListView</span><span class='op'>(</span><span class='nam'>DiskMixin</span><span class='op'>,</span> <span class='nam'>rfc</span><span class='op'>.</span><span class='nam'>GenericView</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
