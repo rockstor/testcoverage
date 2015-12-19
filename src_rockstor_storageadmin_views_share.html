@@ -5,7 +5,7 @@
     
     
     <meta http-equiv='X-UA-Compatible' content='IE=emulateIE7' />
-    <title>Coverage for src/rockstor/storageadmin/views/share: 96%</title>
+    <title>Coverage for src/rockstor/storageadmin/views/share: 95%</title>
     <link rel='stylesheet' href='style.css' type='text/css'>
     
     <script type='text/javascript' src='jquery.min.js'></script>
@@ -21,13 +21,13 @@
 <div id='header'>
     <div class='content'>
         <h1>Coverage for <b>src/rockstor/storageadmin/views/share</b> :
-            <span class='pc_cov'>96%</span>
+            <span class='pc_cov'>95%</span>
         </h1>
         <img id='keyboard_icon' src='keybd_closed.png'>
         <h2 class='stats'>
-            172 statements &nbsp;
-            <span class='run hide_run shortkey_r button_toggle_run'>165 run</span>
-            <span class='mis shortkey_m button_toggle_mis'>7 missing</span>
+            175 statements &nbsp;
+            <span class='run hide_run shortkey_r button_toggle_run'>166 run</span>
+            <span class='mis shortkey_m button_toggle_mis'>9 missing</span>
             <span class='exc shortkey_x button_toggle_exc'>0 excluded</span>
             
         </h2>
@@ -339,13 +339,18 @@
 <p id='n276' class='stm run hide_run'><a href='#n276'>276</a></p>
 <p id='n277' class='pln'><a href='#n277'>277</a></p>
 <p id='n278' class='stm run hide_run'><a href='#n278'>278</a></p>
-<p id='n279' class='stm run hide_run'><a href='#n279'>279</a></p>
-<p id='n280' class='stm run hide_run'><a href='#n280'>280</a></p>
-<p id='n281' class='stm run hide_run'><a href='#n281'>281</a></p>
-<p id='n282' class='stm run hide_run'><a href='#n282'>282</a></p>
+<p id='n279' class='stm mis'><a href='#n279'>279</a></p>
+<p id='n280' class='pln'><a href='#n280'>280</a></p>
+<p id='n281' class='stm mis'><a href='#n281'>281</a></p>
+<p id='n282' class='pln'><a href='#n282'>282</a></p>
 <p id='n283' class='stm run hide_run'><a href='#n283'>283</a></p>
 <p id='n284' class='stm run hide_run'><a href='#n284'>284</a></p>
 <p id='n285' class='stm run hide_run'><a href='#n285'>285</a></p>
+<p id='n286' class='stm run hide_run'><a href='#n286'>286</a></p>
+<p id='n287' class='stm run hide_run'><a href='#n287'>287</a></p>
+<p id='n288' class='stm run hide_run'><a href='#n288'>288</a></p>
+<p id='n289' class='stm run hide_run'><a href='#n289'>289</a></p>
+<p id='n290' class='stm run hide_run'><a href='#n290'>290</a></p>
                 
             </td>
             <td class='text' valign='top'>
@@ -375,7 +380,7 @@
 <p id='t24' class='stm run hide_run'><span class='key'>from</span> <span class='nam'>django</span><span class='op'>.</span><span class='nam'>db</span> <span class='key'>import</span> <span class='nam'>transaction</span><span class='strut'>&nbsp;</span></p>
 <p id='t25' class='stm run hide_run'><span class='key'>from</span> <span class='nam'>storageadmin</span><span class='op'>.</span><span class='nam'>models</span> <span class='key'>import</span> <span class='op'>(</span><span class='nam'>Share</span><span class='op'>,</span> <span class='nam'>Disk</span><span class='op'>,</span> <span class='nam'>Pool</span><span class='op'>,</span> <span class='nam'>Snapshot</span><span class='op'>,</span><span class='strut'>&nbsp;</span></p>
 <p id='t26' class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class='nam'>NFSExport</span><span class='op'>,</span> <span class='nam'>SambaShare</span><span class='op'>,</span> <span class='nam'>SFTP</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
-<p id='t27' class='stm run hide_run'><span class='key'>from</span> <span class='nam'>smart_manager</span><span class='op'>.</span><span class='nam'>models</span> <span class='key'>import</span> <span class='nam'>ShareUsage</span><span class='strut'>&nbsp;</span></p>
+<p id='t27' class='stm run hide_run'><span class='key'>from</span> <span class='nam'>smart_manager</span><span class='op'>.</span><span class='nam'>models</span> <span class='key'>import</span> <span class='op'>(</span><span class='nam'>ShareUsage</span><span class='op'>,</span> <span class='nam'>Replica</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
 <p id='t28' class='stm run hide_run'><span class='key'>from</span> <span class='nam'>fs</span><span class='op'>.</span><span class='nam'>btrfs</span> <span class='key'>import</span> <span class='op'>(</span><span class='nam'>add_share</span><span class='op'>,</span> <span class='nam'>remove_share</span><span class='op'>,</span> <span class='nam'>update_quota</span><span class='op'>,</span><span class='strut'>&nbsp;</span></p>
 <p id='t29' class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>share_usage</span><span class='op'>,</span> <span class='nam'>set_property</span><span class='op'>,</span> <span class='nam'>mount_share</span><span class='op'>,</span> <span class='nam'>qgroup_id</span><span class='op'>,</span><span class='strut'>&nbsp;</span></p>
 <p id='t30' class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>shares_info</span><span class='op'>,</span> <span class='nam'>qgroup_create</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
@@ -626,14 +631,19 @@
 <p id='t275' class='pln'><span class='strut'>&nbsp;</span></p>
 <p id='t276' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>_rockon_check</span><span class='op'>(</span><span class='nam'>request</span><span class='op'>,</span> <span class='nam'>sname</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
 <p id='t277' class='pln'><span class='strut'>&nbsp;</span></p>
-<p id='t278' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>try</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
-<p id='t279' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>remove_share</span><span class='op'>(</span><span class='nam'>share</span><span class='op'>.</span><span class='nam'>pool</span><span class='op'>,</span> <span class='nam'>share</span><span class='op'>.</span><span class='nam'>subvol_name</span><span class='op'>,</span> <span class='nam'>share</span><span class='op'>.</span><span class='nam'>pqgroup</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
-<p id='t280' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>except</span> <span class='nam'>Exception</span><span class='op'>,</span> <span class='nam'>e</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
-<p id='t281' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>logger</span><span class='op'>.</span><span class='nam'>exception</span><span class='op'>(</span><span class='nam'>e</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
-<p id='t282' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>e_msg</span> <span class='op'>=</span> <span class='op'>(</span><span class='str'>&#39;Failed to delete the Share(%s). Error from the OS: %s&#39;</span> <span class='op'>%</span> <span class='op'>(</span><span class='nam'>sname</span><span class='op'>,</span> <span class='nam'>e</span><span class='op'>.</span><span class='nam'>__str__</span><span class='op'>(</span><span class='op'>)</span><span class='op'>)</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
-<p id='t283' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>handle_exception</span><span class='op'>(</span><span class='nam'>Exception</span><span class='op'>(</span><span class='nam'>e_msg</span><span class='op'>)</span><span class='op'>,</span> <span class='nam'>request</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
-<p id='t284' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>share</span><span class='op'>.</span><span class='nam'>delete</span><span class='op'>(</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
-<p id='t285' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>return</span> <span class='nam'>Response</span><span class='op'>(</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p id='t278' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>if</span> <span class='op'>(</span><span class='nam'>Replica</span><span class='op'>.</span><span class='nam'>objects</span><span class='op'>.</span><span class='nam'>filter</span><span class='op'>(</span><span class='nam'>share</span><span class='op'>=</span><span class='nam'>sname</span><span class='op'>)</span><span class='op'>.</span><span class='nam'>exists</span><span class='op'>(</span><span class='op'>)</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p id='t279' class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>e_msg</span> <span class='op'>=</span> <span class='op'>(</span><span class='str'>&#39;Share(%s) is configured for replication. If you are &#39;</span><span class='strut'>&nbsp;</span></p>
+<p id='t280' class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class='str'>&#39;sure, delete the replication task and try again.&#39;</span> <span class='op'>%</span> <span class='nam'>sname</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p id='t281' class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>handle_exception</span><span class='op'>(</span><span class='nam'>Exception</span><span class='op'>(</span><span class='nam'>e_msg</span><span class='op'>)</span><span class='op'>,</span> <span class='nam'>request</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p id='t282' class='pln'><span class='strut'>&nbsp;</span></p>
+<p id='t283' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>try</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p id='t284' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>remove_share</span><span class='op'>(</span><span class='nam'>share</span><span class='op'>.</span><span class='nam'>pool</span><span class='op'>,</span> <span class='nam'>share</span><span class='op'>.</span><span class='nam'>subvol_name</span><span class='op'>,</span> <span class='nam'>share</span><span class='op'>.</span><span class='nam'>pqgroup</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p id='t285' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>except</span> <span class='nam'>Exception</span><span class='op'>,</span> <span class='nam'>e</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p id='t286' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>logger</span><span class='op'>.</span><span class='nam'>exception</span><span class='op'>(</span><span class='nam'>e</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p id='t287' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>e_msg</span> <span class='op'>=</span> <span class='op'>(</span><span class='str'>&#39;Failed to delete the Share(%s). Error from the OS: %s&#39;</span> <span class='op'>%</span> <span class='op'>(</span><span class='nam'>sname</span><span class='op'>,</span> <span class='nam'>e</span><span class='op'>.</span><span class='nam'>__str__</span><span class='op'>(</span><span class='op'>)</span><span class='op'>)</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p id='t288' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>handle_exception</span><span class='op'>(</span><span class='nam'>Exception</span><span class='op'>(</span><span class='nam'>e_msg</span><span class='op'>)</span><span class='op'>,</span> <span class='nam'>request</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p id='t289' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>share</span><span class='op'>.</span><span class='nam'>delete</span><span class='op'>(</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p id='t290' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>return</span> <span class='nam'>Response</span><span class='op'>(</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
                 
             </td>
         </tr>
