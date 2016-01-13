@@ -286,11 +286,11 @@ I0
 sg22
 I0
 sg23
-I13
+I20
 sg24
 I0
 sbssg25
-S'l\x08f\xfe\xec+[\xaff\xbfp\x13q\xdbQ\xcc'
+S'I\xe7_9*\x8d\xbdI\xfd\xf1E\xfd\x98\xa7G\xa0'
 p82
 ssS'src_rockstor_storageadmin_views_netatalk'
 p83
@@ -1454,7 +1454,7 @@ S'3.7.1'
 p356
 sS'settings'
 p357
-S'o/\xc7\x1d\xb9\xc7\x1e\xc5>o1t@3\xf4\x05'
+S'\x1eT\xc2b\x82\x08\xb4\xfe\xceV\x8fS\xd2\xb8\xd7\xd5'
 p358
 sS'format'
 p359
